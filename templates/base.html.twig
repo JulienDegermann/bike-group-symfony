@@ -30,7 +30,7 @@
                             <a class="nav-link active" href="/">Accueil<span class="visually-hidden">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Features</a>
+                            <a class="nav-link" href="{{ path('show_brands') }}">Marques de VTT</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Pricing</a>
@@ -39,9 +39,9 @@
                             <a class="nav-link" href="#">About</a>
                         </li>
                     </ul>
-                        <a class="btn btn-secondary my-2 my-sm-0 ms-2">Connexion</a>
-                        <a class="btn btn-secondary my-2 my-sm-0 ms-2">Déconnexion</a>
-                        <a class="btn btn-secondary my-2 my-sm-0 ms-2">Inscription</a>
+                        <a href="/login" class="btn btn-secondary my-2 my-sm-0 ms-2">Connexion</a>
+                        <a href="/logout" class="btn btn-secondary my-2 my-sm-0 ms-2">Déconnexion</a>
+                        <a href="/subscribe" class="btn btn-secondary my-2 my-sm-0 ms-2">Inscription</a>
                 </div>
             </div>
         </header>
