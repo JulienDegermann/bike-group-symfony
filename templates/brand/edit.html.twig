@@ -1,0 +1,34 @@
+{% extends 'base.html.twig' %}
+
+  {% block title %}
+  
+  {% endblock %}
+  
+  {% block body %}
+    <style>
+      .example-wrapper {
+        margin: 1em auto;
+        max-width: 800px;
+        width: 95%;
+        font: 18px/1.5 sans-serif;
+      }
+      .example-wrapper code {
+        background: #f5f5f5;
+        padding: 2px 6px;
+      }
+    </style>
+  <div class="container">
+      <div class="example-wrapper">
+          <h1>Modifier une marque</h1>
+          <a href="{{ path('show_brands') }}" class="text-primary mt-1">Retour à la liste</a>
+      
+          {{ form_start(form) }}
+          {{ form_row(form.name) }}
+          <button class="form-control btn btn-primary w-auto" type="submit">Enregistrer les modifications</button>
+          {{ form_end(form) }}
+
+          </div>
+  </div>
+    
+  {% endblock %}
+  
